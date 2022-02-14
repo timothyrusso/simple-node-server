@@ -39,12 +39,10 @@ const markup = `
   </html>
 `;
 
-// write your code here
-
 const server = http.createServer((req, res) => {
-    res.writeHead(200, {
-        'Content-Type': 'text/html; charset=utf8'
-    });
+  res.writeHead(200, {
+    'Content-Type': 'text/html; charset=utf8'
+  });
   res.end(markup, 'utf8');
 });
 
